@@ -18,6 +18,7 @@ body {
   width: 100%;
   margin: 5rem auto;
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .15);
+  border-radius: 3px;
 }
 
 .container {
@@ -57,9 +58,9 @@ body {
 input {
   outline: none;
   padding: .4rem;
+  border: 1px solid #D5D4D8;
+  text-indent: .5rem;
 }
-
-
 
 button {
   display: inline-block;
