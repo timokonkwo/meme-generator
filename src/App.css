@@ -1,0 +1,47 @@
+:root {
+  --background-color: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #E5E5E5;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 400px;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.navbar {
+  background: var(--background-color);
+  padding: .4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.navbar p {
+  font-size: .7rem;
+}
