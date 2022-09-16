@@ -12,6 +12,11 @@ body {
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
 .wrapper {
   max-width: 450px;
   background-color: #fff;
