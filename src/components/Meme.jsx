@@ -10,7 +10,7 @@ export default function Meme() {
 		setImg(prev => imgUrl)
 	}
 
-	const [img, setImg] = useState(null);
+	const [img, setImg] = useState("");
 
 	return (
 		<main className="container">
