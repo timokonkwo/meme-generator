@@ -68,6 +68,7 @@ input {
   border: 1px solid #D5D4D8;
   text-indent: .5rem;
   margin-bottom: 1rem;
+  width: calc(253px - 3.8rem)
 }
 
 button {
