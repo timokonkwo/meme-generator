@@ -1,5 +1,4 @@
 import trollface from "../assets/img/troll-face.png";
-
 export default function Navbar() {
 	return (
 		<div className="navbar">

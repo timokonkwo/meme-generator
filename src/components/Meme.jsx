@@ -30,7 +30,7 @@ export default function Meme() {
 			<button onClick={getMemeImg}>Get a new meme image 👀</button>
 
 			<div className="container">
-				<img src={meme.randomImg} />
+				<img src={meme.randomImg} className="meme-img"/>
 			</div>
 		</main>
 	);

@@ -14,8 +14,6 @@ body {
 
 img {
   max-width: 100%;
-  margin-bottom: 2rem;
-  border-radius: .3rem;
 }
 
 .wrapper {
@@ -81,4 +79,9 @@ button {
   padding: .5rem .9rem;
   color: #fff;
   margin-bottom: 1.5rem;
+}
+
+.meme-img {
+  margin-bottom: 2rem;
+  border-radius: .3rem;
 }
