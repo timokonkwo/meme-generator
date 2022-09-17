@@ -3,6 +3,14 @@ import { useState } from "react";
 
 
 export default function Meme() {
+	const [meme, setMeme] = useState({
+		topText: "",
+		bottomText: "",
+		randomImg: "http://i.imgflip.com/1bij.jpg",
+	});
+
+	const [allMemeImages, setAllMemeImages] = useState(memesData);
+
 	function getMemeImg(){
 		const memeImgs = memesData.data.memes;
 		const imgUrl = memeImgs[Math.floor(Math.random() * memeImgs.length)].url;
@@ -12,12 +20,6 @@ export default function Meme() {
 			randomImg: imgUrl
 		}))
 	}
-
-	const [meme, setMeme] = useState({
-		topText: "",
-		bottomText: "",
-		randomImg: "http://i.imgflip.com/1bij.jpg"
-	});
 
 	return (
 		<main className="container">
