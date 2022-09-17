@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .wrapper {
   max-width: 450px;
   background-color: #fff;
@@ -39,7 +43,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.logo {
+.logo, .navbar a {
   display: inline-flex;
   align-items: center;
   gap: .4rem;
@@ -50,7 +54,11 @@ img {
 }
 
 .navbar p {
-  font-size: .7rem;
+  font-size: .8rem;
+}
+
+.github-icon {
+  width: 20px;
 }
 
 .input-container {

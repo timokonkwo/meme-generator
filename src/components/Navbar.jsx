@@ -1,4 +1,5 @@
 import trollface from "../assets/img/troll-face.png";
+
 export default function Navbar() {
 	return (
 		<div className="navbar">
@@ -7,7 +8,14 @@ export default function Navbar() {
                 Meme Generator
 			</div>
 
-            <p>React Course - Project 3</p>
+            <p>
+				<a href="https://github.com/timokonkwo/meme-generator">
+					
+				<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" className="github-icon"/>
+					View on github
+					</a> 
+
+				</p>
 		</div>
 	);
 }
