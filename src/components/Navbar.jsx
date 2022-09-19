@@ -4,7 +4,7 @@ export default function Navbar() {
 	return (
 		<div className="navbar">
 			<div className="logo">
-				<img src={trollface} alt="troll face emoji"/>
+				<img src={trollface} alt="troll face emoji icon"/>
                 Meme Generator
 			</div>
 
