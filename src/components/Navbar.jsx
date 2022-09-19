@@ -11,7 +11,7 @@ export default function Navbar() {
             <p>
 				<a href="https://github.com/timokonkwo/meme-generator" target="_blank">
 					
-				<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" className="github-icon"/>
+				<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" className="github-icon"/>
 					View on github
 					</a> 
 
