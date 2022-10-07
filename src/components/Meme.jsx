@@ -34,8 +34,22 @@ export default function Meme() {
 	return (
 		<main className="container">
 			<div className="input-container">
-				<input type="text" name="topText" placeholder="top text" onChange={setMemeText}/>
-				<input type="text" name="bottomText" placeholder="bottom text" onChange={setMemeText}/>
+				<input 
+				type="text" 
+				name="topText" 
+				placeholder="top text" 
+				onChange={setMemeText}
+				value={meme.topText}
+				/>
+
+				<input 
+				type="text" 
+				name="bottomText" 
+				placeholder="bottom text" 
+				onChange={setMemeText}
+				value={meme.bottomText}
+
+				/>
 			</div>
 			<button onClick={getMemeImg}>Get a new meme image 👀</button>
 
