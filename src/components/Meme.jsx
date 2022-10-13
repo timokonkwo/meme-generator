@@ -1,26 +1,40 @@
-import memesData from "../assets/memesData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
+//API -> "https://api.imgflip.com/get_memes"
 
 export default function Meme() {
+	
+	// Set the meme state
 	const [meme, setMeme] = useState({
 		topText: "",
 		bottomText: "",
 		randomImg: "http://i.imgflip.com/1bij.jpg",
 	});
 
-	const [allMemeImages, setAllMemeImages] = useState(memesData);
+	// initialize the all Memes Data state
+	const [allMemesData, setallMemesData] = useState("");
 
+
+	// Initialize the useEffect to run anytime the meme state changes.
+	useEffect(() => {
+		fetch("https://api.imgflip.com/get_memes")
+			.then(res => res.json())
+			.then(data => setallMemesData(data.data.memes))
+	}, [meme])
+
+
+	// Getting a random img from the allMemesData array
 	function getMemeImg(){
-		const memeImgs = memesData.data.memes;
-		const imgUrl = memeImgs[Math.floor(Math.random() * memeImgs.length)].url;
+		const imgUrl = allMemesData[Math.floor(Math.random() * allMemesData.length)].url;
 
+		// Change the current state with the new img
 		setMeme(prevMeme => ({
 			...prevMeme,
 			randomImg: imgUrl
 		}))
 	}
 
+	// Set the meme top and bottom text
 	function setMemeText(e){
 		const {name, value} = e.target;
 		setMeme(prev => (
